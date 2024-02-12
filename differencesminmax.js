@@ -14,14 +14,14 @@ function numbers(input){
     else
     {
         largest = Math.max(...input);
-        smallest = Math.min(...input);}
+        smallest = Math.min(...input);
+    }
     const difference = largest - smallest;
     if(isNaN(difference)){
         return "Please ensure your list only contains numbers and is formatted 4, 10 ,16, ... etc.";
     }
-    else{
-        return difference;
-    }
+    
+    return difference;
     
     
 }
