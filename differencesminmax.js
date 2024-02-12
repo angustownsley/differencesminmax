@@ -1,11 +1,10 @@
 
 
 function numbers(input){
-    validate = typeof input;
     let arr  = []
     let largest = 0
     let smallest = 0
-    if(Array.isArray(input) == false)
+    if(!Array.isArray(input))
     {
         arr = [input];
         largest = Math.max(...arr);
